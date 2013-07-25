@@ -1,0 +1,7 @@
+[user]
+	name = Danny Whalen
+	email = daniel.r.whalen@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	autocrlf = input
