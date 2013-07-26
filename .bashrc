@@ -17,5 +17,6 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 # Livin' the easy life
 alias ebash='vim ~/.bashrc && echo "Reloading ~/.bashrc ..." && rbash'
 alias rbash='source ~/.bashrc'
-alias gg='git status -s'
+alias gg='git status'
 alias gdc='git diff --cached | mate'
+alias cu='bundle exec cucumber'
