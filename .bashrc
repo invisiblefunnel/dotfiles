@@ -1,4 +1,4 @@
-# Git tab completion
+# Git helpers
 source ~/bin/.git-prompt.sh
 source ~/bin/.git-completion.bash
 source ~/bin/.githelpers
@@ -21,3 +21,5 @@ alias rbash='source ~/.bashrc'
 alias gg='git status'
 alias gdc='git diff --cached | mate'
 alias cu='bundle exec cucumber'
+alias mrm='rake db:migrate && rake db:rollback && rake db:migrate'
+alias gl='pretty_git_log'
