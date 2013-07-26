@@ -1,6 +1,7 @@
 # Git tab completion
 source ~/bin/.git-prompt.sh
 source ~/bin/.git-completion.bash
+source ~/bin/.githelpers
 
 # setup chruby
 source /usr/local/share/chruby/chruby.sh
