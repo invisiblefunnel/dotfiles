@@ -12,7 +12,7 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Show branch in status line
-PS1='[\W$(__git_ps1 " (%s)")]\$ '
+PS1='[\W$(__git_ps1 " (\e[32m%s\e[0m)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
 # Livin' the easy life
