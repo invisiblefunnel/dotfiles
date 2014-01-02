@@ -15,6 +15,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 PS1='[\W$(__git_ps1 " (\e[32m%s\e[0m)")]\$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
+# Highlight directories
+alias ls="ls -G"
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 # Livin' the easy life
 alias ebash='vim ~/.bashrc && echo "Reloading ~/.bashrc ..." && rbash'
 alias rbash='source ~/.bashrc'
@@ -22,4 +26,7 @@ alias gg='git status'
 alias gdc='git diff --cached | mate'
 alias cu='bundle exec cucumber'
 alias mrm='rake db:migrate && rake db:rollback && rake db:migrate'
-alias gl='pretty_git_log'
+alias glf='pretty_git_log'
+alias gl='glf -n 20'
+alias gdl='git diff HEAD^ HEAD | mate'
+alias be='bundle exec'
